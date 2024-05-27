@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: aqua;
+    }
+    .rotate{
+        position: absolute;
+        top: 40%;
+        left: 0;
+        animation: move 5s linear infinite;
+    }
+    @keyframes move{
+        0%{
+        right: 1px;
+        }
+        100%{
+            left: calc(100% - 200px);
+        }
+    }
+
+</style>
+<body>
+    <img class="rotate" src="images-1.jpg" width="200px" height="100x" />
+</body>
+</html>

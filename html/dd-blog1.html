@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #fdfafa;
+      }
+
+      .main-header {
+        background-color: rgb(63, 166, 255);
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .name {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      .list ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .list li {
+        margin-right: 30px;
+      }
+
+      .list li a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+      }
+      p{
+        text-align: center;
+        font-size: 20px;
+      }
+      .button {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60vw;
+        margin: 0 auto;
+        min-height: 10vh;
+      }
+      .button1,.button2{
+        flex: auto;
+        margin: 10px;
+        padding: 30px;
+        text-align: center;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border-radius: 10px;
+   }
+   .button1:hover {
+    background-position: right center; 
+  }
+  
+  .button2:hover {
+    background-position: right center; 
+  }
+  
+  .button1 {
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+  }
+  
+  .button2 {
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <h2 class="name">My Blog</h2>
+      <nav class="list">
+        <ul>
+          <li><a href="Read">Read</a></li>
+          <li><a href="biography">Biography</a></li>
+          <li><a href="contact">Contact</a></li>
+          <li><a href="blog">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut mollitia,
+      delectus unde, beatae vero iure alias fugiat iste libero illum quaerat
+      omnis. Rerum repellat nam ipsam reprehenderit maiores, quisquam pariatur.
+    </p>
+    <div class="button">
+      <a class="button1">button</a>
+      <a class="button2">button</a>
+
+    </div>
+  </body>
+</html>

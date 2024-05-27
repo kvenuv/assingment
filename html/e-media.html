@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Example</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex; 
+        justify-content: space-between;
+        max-width: 992px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .heading {
+        flex-basis: 30%; 
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+      }
+
+      
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column; 
+        }
+
+        .heading {
+          margin-bottom: 20px; 
+      }
+
+      @media (max-width: 576px) {
+        .container {
+          padding: 10px; 
+        }
+
+        .heading {
+          flex-basis: 100%; 
+        }
+      }
+
+      @media (max-width: 400px) {
+        .heading {
+          padding: 10px; 
+        }
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h2>heading 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          architecto asperiores quidem in quibusdam consequatur unde vero sequi
+          aut soluta dignissimos, fugiat veritatis quod labore autem quis
+          expedita voluptatem quos!
+        </p>
+      </div>
+      <div class="heading">
+        <h2>heading 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nisi
+          fuga facilis libero! Maiores placeat quibusdam necessitatibus ducimus!
+          Libero assumenda voluptates quia laboriosam quibusdam illo sit magni
+          obcaecati vitae sapiente!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
