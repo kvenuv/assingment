@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0; 
+    background-color:rgb(244, 242, 242)
+  }
+
+  .main-header {
+    background-color: rgb(63, 166, 255);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .name {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .list li {
+    margin-right: 30px;
+  }
+
+  .list li a {
+    text-decoration:underline;
+    color: white;
+    font-size: 18px;
+  }
+  img{
+    margin: 2%;
+    border-radius: 2%;
+    display: flex;
+  }
+  .img-container {
+    display: flex;
+  }
+
+.paragraphs-container {
+    margin-top: 30px; /* Adjust spacing as needed */
+    background-color: rgb(234, 239, 238);
+    border-radius: 2%;
+}
+.main-button{
+    text-align: center;
+    border-radius: 2%;
+    margin: auto;
+    padding: 10px;
+}
+.form {
+    max-width: 400px;
+    margin: 40px auto;
+    background-color: #8bc1e4;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.form-box {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: initial;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #f6f2f2;
+    border-radius: 5px;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    background-color: #ebeef3;
+    color: #eef1f3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f3f6f8;
+}
+
+.main-footer {
+    background-color: #5f91b0;
+    color: #f5f3f3;
+    padding: 5px;
+    text-align: center;
+    width: 99%;
+    
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.footer-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-nav ul li a:hover {
+    text-decoration: underline;
+}
