@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100vh;
+    background-color: #f3efef;
+}
+
+.form-container {
+    background-color: #b8aeae;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="radio"],
+input[type="checkbox"],
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+    .checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+
+        button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #456083;
+}
+        @media (min-width: 768px) {
+    .form-group {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .form-group label {
+        width: 20%;
+        margin-bottom: 0;
+        padding-right: 10px;
+        text-align: right;
+    }
+
+    .form-group input, 
+    .form-group textarea {
+        width: 75%;
+    }
+}
+    </style>
+</head>
+<body>
+   
+    <div class="form-container">
+        <h2>Contact Us</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="">Name</label>
+                <input type="text" name="" id="" value="" placeholder="" required />
+            </div>
+
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="text" name="" id="" value="" placeholder="" required />
+            </div>
+
+            <div class="form-group">
+                <label>Do you own a car</label>
+                <input type="radio" name="car_own" id="car_yes" value="Yes" required/>
+                <label for="car_yes">Yes</label>
+                <input type="radio" name="car_own" id="car_no" value="No" required/>
+                <label for="car_no">No</label>
+            </div>
+
+            <div class="form-group">
+                <label for="companies">Make Car</label>
+                <select id="companies" name="companies">
+                    <option value="">Choose any car</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="suzuki">Suzuki</option>
+                    <option value="honda">Honda</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="driving">How often do you drive?</label>
+                <select id="driving" name="driving" required>
+                    <option value="Daily">Daily</option>
+                    <option value="Weekly">Weekly</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Rarely">Rarely</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>What is your primary purpose of driving?</label>
+                <div class="checkbox-group">
+                 <label for="work">Work</label>
+                 <input type="checkbox" name="work" value="Work"/>
+                </div>
+                <div class="checkbox-group">
+                    <label for="leisure">Leisure</label>
+                    <input type="checkbox" name="leisure" value="Leisure"/>
+                    
+                </div>
+                <div class="checkbox-group">
+                    <label for="other">Other</label>
+                    <input type="checkbox" name="other" value="Other"/>
+
+                </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
